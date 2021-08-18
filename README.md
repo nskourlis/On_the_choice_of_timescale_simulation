@@ -2,7 +2,7 @@
 Simulation code for manuscript "On the choice of timescale for other cause mortality in a competing risk setting using flexible parametric survival models"
 
 Guide:
-The datasets with the results of the analysis on the simulated datasets are uploaded. However only the 1st out of the 1000 simulated dataset is provided per scenario due to space limitations. The same for the true values of the scenarios. Due to space limitations only the true values for ages 70, 80 and 90 are provided. The user can easily recreate all the simulated datasets and true values of the CIFs by running the simulation code in their local PC.
+The datasets with the results of the analysis on the simulated datasets are uploaded. However only the 1st out of the 1000 simulated dataset is provided per scenario due to space limitations. The same for the true values of the scenarios. Due to space limitations only the true values for ages 70, 80 and 90 are provided. The user can easily recreate all the simulated datasets and true values of the CIFs by running the simulation code in their local repository. From the 24 scenarios explored in total, 12 scenarios were used in the manuscript (scenarios where age at diagnosis and gender are assumed independent). Within the simulation code these scenarios are: 3,4,7,8,11,12,15,16,19,20,23,24. This scenarios were recoded as 1,2,3,4,5,6,7,8,9,10,11,12 in the manuscript.
 
 Example: Template for project readme.txt file
 Readme.txt
@@ -23,4 +23,4 @@ FOLDERS:
 4b.Analyze_results: This folder contains the results of the estimation analyses of the 4 different approaches over the different scenarios (4 subfolders).
 5a.Performance_do: This folder has 4 do files, one for each of the 4 modelling approaches. In each do file the true and the estimated CIF values of each approach (over scenarios, gender and ages at diagnosis) are called. Then the bias, coverage, relative precision (of each common timescale approach compared to approach a-Attained age), relative bias and Monte carlo errors are computed. Then, the do file "Results_aggregation" aggregated the aforementioned performance measures that are stored in folder "5b.Performance_results" into a common dataset and exports it as a csv/excel file.
 5b.Performance_results: The folder that contains/stores the performance measures of the simulation over scenarios, gender and ages at diagnosis for each different modelling approach (4 sub folders). A 5th sub folder "data_merge" contains the intermediate and final results of the aggregation of the perforamce measures.
-x
+
